@@ -38,7 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     background-color: var(--very-dark-blue-card-bg-color);
     width: 90vw;
     max-width: 280px;
@@ -62,7 +62,6 @@ main {
 
 
 h1 {
-    align-self: flex-start;
     margin-top: 18px;
     color: var(--white-color);
     cursor: pointer;
@@ -134,7 +133,6 @@ h1 {
     font-size: 15px;
     font-weight: 300;
     color: var(--soft-blue-color);
-    align-self: flex-start;
 }
 
 .details {
@@ -187,14 +185,13 @@ hr {
     display: flex;
     justify-content: start;
     align-items: center;
-    align-self: flex-start;
 }
 
 .credit img {
     width: 28px;
     height: 28px;
     margin-right: 10px;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -267,7 +264,6 @@ h1:hover, .credit p span:hover {
 
 }
 
-
 /* Media Query */
 
 @media (max-width:450px) {
@@ -296,10 +292,12 @@ h1:hover, .credit p span:hover {
     .card {
         max-width: 35vw;
         height: 90%;
-        max-height: 450px;
+        max-height: 500px;
     }
 
-
+    .image {
+        height: 70%;
+    }
 }
 
 @media (min-width:450px) and (max-width:1024px) and (min-height:601px) {
@@ -311,10 +309,8 @@ h1:hover, .credit p span:hover {
         width: 80vw;
         max-width: 400px;
         height: 85vh;
-        max-height: 750px;
+        max-height: 650px;
     }
-
-
 
     h1 {
         font-size: 25px !important;
